@@ -149,8 +149,20 @@ svg {
     flex: 30%;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 600px) {
     .nav {
-        overflow: auto;
+        padding: 0 10px;
+        border-radius: 30px;
+    }
+
+    .nav-item {
+        padding: 10px;
+        margin: 0 3px;
+    }
+
+    .nav-item:before {
+        bottom: -3px;
+        height: 3px;
+        border-radius: 6px 6px 0 0;
     }
 }
