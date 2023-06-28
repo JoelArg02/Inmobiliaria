@@ -152,3 +152,12 @@ body{
         right: 35px;
     }
 }
+main{
+    position: relative;
+    top: 56px;
+}
+
+iframe{
+    width: 100%;
+    height: 550px;
+}
