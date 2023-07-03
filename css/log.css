@@ -5,8 +5,8 @@
   }
   
   body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #eef0f7e4;
+    font-family: 'Inter';
     display: grid;
     place-items: center;
     min-height: 100vh;
@@ -14,7 +14,6 @@
   }
   
   .sesion{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #eef0f7e4;
     text-decoration: none;
   }

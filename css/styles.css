@@ -2,8 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+    font-family: 'Inter';
+    font-size: 15px;
     font-weight: 700;
 }
 
@@ -150,8 +150,8 @@ body{
     padding: 0px;
     border-radius: 3px;
     transition: background-color 0.3s ease;
-    border-bottom: none; /* Agrega esta línea para ocultar las líneas */
-}
+    border-bottom: none;
+  }
 
 a {
     text-decoration: none;
