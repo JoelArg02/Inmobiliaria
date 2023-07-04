@@ -1,0 +1,67 @@
+body {
+    align-items: center;
+    display: grid;
+    align-content: center;
+    margin-top: 20px;
+    width: 410px;
+    background-color: gray;
+}
+
+.parent {
+    width: 380px;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+img {
+    border-radius: 15px;
+    width: 380px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.div1 {
+    flex: 1 0 100%;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.div2 {
+    border-radius: 4px;
+    width: 350px;
+    height: auto;
+ 
+    z-index: 1;
+    background: var(--neutral-white, #FFF);
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.07);
+    flex: 1 0 100%;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.FlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow: auto;
+    flex-direction: row;
+    width: 85%;
+    height: auto;
+}
+
+.FlexContainer .customerDiv {
+    margin: 10px;
+    width: 30px;
+    height: 10px;
+    background-color: lightblue;
+}
