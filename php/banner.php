@@ -36,12 +36,6 @@
         </nav>
     </header>
 
-    <section class="contenido" id="contenido">
-        <iframe id="contenedor" class="contenedor" name="contenedor" src="" width="100%" height="655px">
-
-        </iframe>
-    </section>
-
 </body>
 
 

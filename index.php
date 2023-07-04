@@ -15,7 +15,7 @@ include("php/banner.php");
 <body>
   <div>
     <?php
-    include("");
+    include("php/inicio.php");
     ?>
   </div>
   <div>
