@@ -36,32 +36,33 @@ img {
     border-radius: 4px;
     width: 350px;
     height: auto;
- 
-    z-index: 1;
     background: var(--neutral-white, #FFF);
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.07);
-    flex: 1 0 100%;
     position: absolute;
     top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding-left: 15px;
+    padding-top: 15px;
 }
 
 .FlexContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    overflow: auto;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
     width: 85%;
-    height: auto;
+    height: 100px;
+    gap: 10px
 }
 
-.FlexContainer .customerDiv {
-    margin: 10px;
-    width: 30px;
-    height: 10px;
-    background-color: lightblue;
+
+
+
+.dfeatures{
+    width: 80%;
+    display: inline-flex;
 }
+
