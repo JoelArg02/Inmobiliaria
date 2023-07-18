@@ -47,6 +47,12 @@ body {
     transform: scale(1.1);
 }
 
+#myIframe {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
 .header .nav-links a {
     font-size: 20px;
     color: #EEF0F7;
@@ -94,6 +100,8 @@ body {
 
 
 .footer {
+    margin-top: -20px;
+
     padding: 20px 0px;
     box-sizing: border-box;
     background-color: #456173;
@@ -121,6 +129,7 @@ body {
     color: #f9fafa;
     font-weight: 500;
     border-bottom: 2px solid #afd4c8;
+
     display: inline-block;
 }
 
