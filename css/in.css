@@ -1,15 +1,12 @@
-html,
-body {
-  background: #F2EEE9;
+body{
   margin: 0;
+  overflow: hidden;
   font-family: 'Inter';
   padding: 0;
-  overflow: hidden;
 }
 
 .cont_bus {
   background-color: #1C304A;
-  height: 414px;
 }
 
 .espc {
@@ -110,7 +107,7 @@ body {
   background: #456173;
 }
 
-.pc {
+a {
   color: #FFF;
   text-align: center;
   font-family: Roboto;
@@ -120,7 +117,7 @@ body {
   line-height: normal;
 }
 
-.flex-container {
+.flex-container_tit {
   background-color: #FFF;
   border-radius: 10px;
   width: 75%;
@@ -213,39 +210,22 @@ label:active:after {
 }
 
 
-.par {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: #F2EEE9;
-  grid-template-columns: repeat(auto-fit, minmax(29%, 1fr));
-  gap: -25px;
-  padding: 25px;
-
-}
-
-.div1,
-.div2,
-.div3,
-.div4,
-.div5,
-.div6,
-.div7,
-.div8,
-.div9 {
+.content-house {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-
-  margin-bottom: 100px;
-  /* Espacio de 100px hacia abajo */
+  flex-wrap: wrap;
+  width: 85%;
+  font-size: 30px;
+  text-align: center;
+  gap: 10px;
 }
 
+.c-flex-item {
+  padding-bottom: 50px;
+  padding: 10px;
+  flex: 32%;
+}
 
-.parent {
+.parent_c{
   width: 380px;
   position: relative;
   height: auto;
@@ -255,24 +235,24 @@ label:active:after {
   justify-content: space-between;
 }
 
-img {
+.img_c {
   border-radius: 15px;
   width: 380px;
   height: auto;
   margin: 0 auto;
 }
 
-.div1_1 {
+.divInferior {
   flex: 1 0 100%;
   position: relative;
   justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
+  align-items: center;
+  align-content: baseline;
 }
 
-.div2_1 {
+.divSuperior {
   border-radius: 4px;
-  width: 350px;
+  width: 75%;
   height: auto;
   background: var(--neutral-white, #FFF);
   box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.07);
@@ -284,7 +264,7 @@ img {
   padding-top: 15px;
 }
 
-.FlexContainer {
+.FlexContainer_c{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -292,12 +272,23 @@ img {
   align-items: stretch;
   align-content: stretch;
   width: 85%;
-  height: 100px;
-  gap: 10px
+  max-width: 85%;
+  font-size: 15px;
+  gap: 10px;
+  max-height: 75px;
+  min-height: 75px;
 }
 
-.dfeatures {
+.dfeatures_c{
   width: 80%;
   display: inline-flex;
   gap: 10px;
+}
+
+
+
+@media (max-width: 400px) {
+  .c-flex-item {
+    flex: 100%;
+  }
 }
