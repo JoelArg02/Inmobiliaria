@@ -6,4 +6,10 @@ window.addEventListener('DOMContentLoaded', function() {
     iframe.addEventListener('load', resizeIframe);
     window.addEventListener('resize', resizeIframe);
   });
-  
+
+  function resizeIframe() {
+    var iframe = document.getElementById("myIframe");
+    if (iframe) {
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+    }
+}

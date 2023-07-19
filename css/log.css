@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin:10px 10px 10px;
+    padding: 2;
     box-sizing: border-box;
   }
   
@@ -9,10 +9,10 @@
     font-family: 'Inter';
     display: grid;
     place-items: center;
-    min-height: 100vh;
+    height: 620px;
     overflow: hidden;
   }
-  
+
   .sesion{
     color: #eef0f7e4;
     text-decoration: none;
