@@ -49,8 +49,8 @@ body {
 
 #myIframe {
     width: 100%;
-    
-    
+    height: 1000px;
+    overflow: hidden;
   }
 .header .nav-links a {
     font-size: 20px;

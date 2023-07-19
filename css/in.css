@@ -1,12 +1,16 @@
-body{
+body {
   margin: 0;
   overflow: hidden;
   font-family: 'Inter';
   padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
 .cont_bus {
   background-color: #1C304A;
+  text-align: center;
+  padding: 50px;
 }
 
 .espc {
@@ -39,7 +43,6 @@ body{
 
 #search {
   color: #456173;
-
 }
 
 .select-wrapper:after {
@@ -109,9 +112,9 @@ body{
 
 a {
   color: #FFF;
-  text-align: center;
-  font-family: Roboto;
+  font-family: Inter;
   font-size: 56px;
+  
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -122,6 +125,7 @@ a {
   border-radius: 10px;
   width: 75%;
   height: 109px;
+  min-width: 20%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -211,21 +215,24 @@ label:active:after {
 
 
 .content-house {
-  display: flex;
-  flex-wrap: wrap;
+  padding-block: initial;
   width: 85%;
-  font-size: 30px;
-  text-align: center;
-  gap: 10px;
+  padding: 25px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start
 }
+
 
 .c-flex-item {
   padding-bottom: 50px;
-  padding: 10px;
-  flex: 32%;
+  padding: 20px;
+  flex: 25%;
 }
 
-.parent_c{
+.parent_c {
   width: 380px;
   position: relative;
   height: auto;
@@ -264,7 +271,7 @@ label:active:after {
   padding-top: 15px;
 }
 
-.FlexContainer_c{
+.FlexContainer_c {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -279,16 +286,67 @@ label:active:after {
   min-height: 75px;
 }
 
-.dfeatures_c{
+.dfeatures_c {
   width: 80%;
   display: inline-flex;
   gap: 10px;
 }
 
+.content-house-letter {
+  width: 100%;
+  height: 75px;
+  display: flex;
 
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
 
-@media (max-width: 400px) {
+.c-flex-item-letter-large {
+  flex: 100%;
+  font-size: 15px;
+  text-align: -webkit-auto;
+  color: var(--neutral-gray-3, #AEAEAE);
+
+  /* Body /  Small - Regular */
+  font-family: ;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  /* 23.8px */
+
+}
+
+.c-flex-item-letter-price {
+  flex: 33%;
+  font-size: 15px;
+
+}
+
+.c-flex-item-letter {
+  flex: 1; /* Expand to fill available space */
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: center; /* Align items horizontally in the center */
+  font-size: 15px;
+}
+
+.contenedor_hs {
+  padding: 50px;
+  text-align: -webkit-center;
+
+}
+
+.c-flex-item-letter svg {
+  margin-right: 2px; 
+}
+@media (max-width: 500px) {
   .c-flex-item {
-    flex: 100%;
+    padding-top: 50px;
+    flex: 100%; 
+  }
+  a{
+    font-size: 40px;
   }
 }
