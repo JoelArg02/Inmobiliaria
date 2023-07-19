@@ -2,15 +2,17 @@
     margin:10px 10px 10px;
     padding: 2;
     box-sizing: border-box;
+    overflow: hidden;
   }
   
   body {
-    background-color: #eef0f7e4;
+    background-color: #f2eee9;
     font-family: 'Inter';
     display: grid;
     place-items: center;
     height: 620px;
     overflow: hidden;
+    font-family:'Montserrat',sans-serif;
   }
 
   .sesion{
@@ -24,7 +26,7 @@
 }
 
   .container {
-    background-color: #fff;
+    background-color: #e6e6e6;
     width: 600px;
     height: 450px;
     position: relative;
@@ -32,17 +34,16 @@
     grid-template-columns: 1fr 1fr;
     place-items: center;
     line-height: 1.5;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+    box-shadow: 0 0 10px #302f2f;
     border-radius: 1%;
   }
   
   .container::after {
     content: '';
     position: absolute;
-    background-image: linear-gradient(to bottom right, #1c304a, #acd2c5);
     width: 620px;
     height: 470px;
-    border-radius: 1%;
+    border-radius: 3%;
     z-index: -1;
   }
   
@@ -56,7 +57,7 @@
     display: grid;
     place-items: center;
     font-size: 1.7rem;
-    color: #2E4052;
+    color: #1179e2;
     border-radius: 40%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.164);
     cursor: pointer;

@@ -5,6 +5,9 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #f2eee9;
+    overflow: hidden;
+    font-family:'Montserrat',sans-serif;
 }
 
 /* Estilos para el div de contenido */
@@ -169,7 +172,6 @@ html, body {
     align-items: center;
     justify-content: center;
     font-size: 14px;
-    font-family: Arial, sans-serif;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -264,7 +266,7 @@ html, body {
 }
 
 #post h2 {
-    color: #3C3C3C;
+    color: #456173;
     font-size: 36px;
     font-family: Roboto, sans-serif;
     font-weight: 500;
@@ -310,7 +312,7 @@ html, body {
 }
 
 .flip-card-back {
-    background-color: #555;
+    background-color: #7d9ca1;
     color: white;
     transform: rotateY(180deg);
     display: flex;
@@ -338,13 +340,13 @@ html, body {
 .btn {
     padding: 10px 20px;
     background-color: #f1f1f1;
-    color: #333;
+    color: #7d9ca1;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .btn:hover {
-    background-color: #333;
+    background-color: #456173;
     color: #f1f1f1;
 }
 

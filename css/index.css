@@ -1,5 +1,6 @@
 * {
-    font-family: Inter;
+    font-family:'Montserrat',sans-serif;
+    list-style: none;
 }
 
 body {
@@ -58,7 +59,7 @@ body {
 }
 
 .header .nav-links a:hover {
-    color: #f1ece5;
+    color: #f2eee9;
 }
 
 .menu-toggle {
@@ -100,7 +101,7 @@ body {
 
 .footer {
     margin-top: -20px;
-
+    text-decoration: none;
     padding: 20px 0px;
     box-sizing: border-box;
     background-color: #456173;
@@ -120,28 +121,26 @@ body {
 
 .footer-links {
     width: 20%;
-    padding: 0 1px;
+    padding: 1px 15px;
 }
 
 .footer-links h4 {
-    font-size: 16px;
+    font-size: 19px;
     color: #f9fafa;
-    font-weight: 500;
-    border-bottom: 2px solid #afd4c8;
-
+    font-weight: 400;
+    border-bottom: 3px solid #afd4c8;
     display: inline-block;
 }
 
 .footer-links ul li a {
-    font-size: 15px;
-    text-decoration: none;
+    font-size: 18px;
     color: #f9fafa;
     transition: all 0.3s ease;
 }
 
 .footer-links ul li a:hover {
     color: #afd4c8;
-    padding-left: s6px;
+    padding-left: 8px;
 }
 
 .social-link a {
@@ -276,7 +275,7 @@ a {
     stroke-linejoin: round;
     stroke: rgb(255, 255, 255);
     stroke-width: 2;
-    transform: translateX(-5px);
+    transform: translateX(-10px);
     transition: all 0.3s ease;
 }
 
@@ -293,7 +292,7 @@ a {
     transform: scale(0.96);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
     .header .nav-links {
         display: none;
     }
