@@ -1,59 +1,87 @@
-function generarCodigoHTML() {
-    const container = document.getElementById('c-flex-item');
+$(document).ready(function () {
+  const labels = document.querySelectorAll('.switch label');
+  labels.forEach(label => {
+    label.addEventListener('click', () => {
+      labels.forEach(l => l.style.color = '#456173');
+      label.style.color = 'white';
+    });
+  });
 
-    const parentDiv = document.createElement('div');
-    parentDiv.classList.add('parent');
+  $("#contactos").click(function () {
+    // Crear el elemento del pop-up
+    var popUp = $("<div></div>");
+    popUp.attr("id", "popup");
+    popUp.css({
+      "position": "fixed",
+      "top": "50%",
+      "left": "50%",
+      "transform": "translate(-50%, -50%)",
+      "background": "#e6e6e6",
+      "border-radius": "8px",
+      "box-shadow": "0 0 40px -10px #000",
+      "padding": "20px 30px 20px 30px",
+      "width": "340px",
+      "height": "540px",
+      "max-width": "calc(100vw - 40px)",
+      "box-sizing": "border-box",
+      "font-family": "'Montserrat', sans-serif",
+      "z-index": "9999"
+    });
 
-    const div1_1 = document.createElement('div');
-    div1_1.classList.add('div1_1');
+    // Contenido del formulario en el pop-up
+    var formContent = `
+    <h2>CONTACTANOS</h2>
+    <p type="nombre:"><input placeholder="Escribe tu nombre aqui..."></input></p>
+    <p type="Email:"><input placeholder="example@gmail.com"></input></p>
+    <p type="Mensaje:"><input placeholder="Escribe la descripcion de tu duda..."></input></p>
+    <button>Enviar mensaje</button>
+    <div>
+      <span class="fa fa-phone"></span>+593 997884812
+      <span class="fa fa-envelope-o"></span>cjgranda1@espe.edu.ec
+    </div>
+  `;
 
-    const image = document.createElement('img');
-    image.setAttribute('src', '../img/house.jpg');
-    div1_1.appendChild(image);
+    popUp.html(formContent);
 
-    const div2_1 = document.createElement('div');
-    div2_1.classList.add('div2_1');
+    // Agregar el pop-up al body del documento
+    $("body").append(popUp);
 
-    const section = document.createElement('section');
-    section.classList.add('FlexContainer');
+    // Agregar el fondo semitransparente
+    var overlay = $("<div></div>");
+    overlay.attr("id", "overlay");
+    overlay.css({
+      "position": "fixed",
+      "top": 0,
+      "left": 0,
+      "width": "100%",
+      "height": "100%",
+      "background-color": "rgba(0, 0, 0, 0.5)",
+      "z-index": "9998"
+    });
+    $("body").append(overlay);
+  });
 
-    const divTitle = document.createElement('div');
-    divTitle.textContent = 'Casa Padro';
-    section.appendChild(divTitle);
+  // Función para mostrar/ocultar el pop-up y el fondo semitransparente
+  function togglePopup() {
+    var popUp = $("#popup");
+    var overlay = $("#overlay");
+    popUp.toggle();
+    overlay.toggle();
+  }
 
-    const divLocation = document.createElement('div');
-    divLocation.classList.add('nmcs');
-    divLocation.textContent = 'Av Panamericana, Quito';
-    section.appendChild(divLocation);
+  // Cerrar el pop-up cuando se hace clic en el botón "Enviar mensaje"
+  $(document).on("click", "button", function () {
+    togglePopup();
+  });
 
-    const divFeatures = document.createElement('div');
-    divFeatures.classList.add('dfeatures');
-
-    const divFeature1 = document.createElement('div');
-    divFeature1.classList.add('df1');
-    divFeature1.textContent = '2 baños';
-    divFeatures.appendChild(divFeature1);
-
-    const divFeature2 = document.createElement('div');
-    divFeature2.classList.add('df2');
-    divFeature2.textContent = '4 Camas';
-    divFeatures.appendChild(divFeature2);
-
-    const divSize = document.createElement('div');
-    divSize.textContent = '200 Metros';
-    divFeatures.appendChild(divSize);
-
-    section.appendChild(divFeatures);
-
-    const divPrice = document.createElement('div');
-    divPrice.textContent = '$375,232';
-    section.appendChild(divPrice);
-
-    div2_1.appendChild(section);
-    parentDiv.appendChild(div1_1);
-    parentDiv.appendChild(div2_1);
-
-    container.appendChild(parentDiv);
-}
-
-generarCodigoHTML();
+  // Cerrar el pop-up cuando se hace clic fuera del contenido del pop-up
+  $(document).on("click", function (event) {
+    if (!$(event.target).closest("#popup").length && !$(event.target).is("#contactos")) {
+      var popUp = $("#popup");
+      var overlay = $("#overlay");
+      if (popUp.is(":visible")) {
+        togglePopup();
+      }
+    }
+  });
+});
