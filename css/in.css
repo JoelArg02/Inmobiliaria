@@ -251,7 +251,16 @@ a:hover {
   font-weight: 500;
   line-height: 30px;
 }
+a {
+  text-decoration: none;
+}
 
+
+a {
+  color: inherit; 
+  
+  
+}
 #contactos {
   display: flex;
   align-items: center;
