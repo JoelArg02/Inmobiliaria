@@ -17,7 +17,8 @@ a {
   }
 .section-postion {
     width: 1366px;
-
+    justify-content: center; /* Centrar horizontalmente */
+  
     justify-items: center;
     display: grid;
     grid:
@@ -35,7 +36,7 @@ a {
     flex-direction: column;
     gap: 16px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-strech;
 }
 
 
