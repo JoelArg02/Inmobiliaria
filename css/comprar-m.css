@@ -5,7 +5,16 @@ body {
     font-family: Inter;
 
 }
-
+a {
+    text-decoration: none;
+  }
+  
+  
+  a {
+    color: inherit; 
+    
+    
+  }
 .section-postion {
     width: 1366px;
 
@@ -144,10 +153,10 @@ input[type="submit"]:hover {
     color: var(--neutral-gray-2, #626262);
 
 
-    
+
     font-size: 14px;
     font-style: normal;
-    
+
     flex: 1 1 10%;
 }
 
@@ -156,7 +165,7 @@ input[type="submit"]:hover {
 }
 
 .fila-3-flex {
-    flex: 1 1 10%;
+    flex: 1 1 25%;
 
 }
 
@@ -172,6 +181,18 @@ input[type="submit"]:hover {
 
 .fila-2-flex svg,
 .fila-3-flex svg {
-    transform: translateY(px);
-    
+    transform: translateY(3px);
+
+}
+
+#verde {
+    color: #47A101;
+}
+
+#celeste {
+    color: #3B86A9;
+}
+
+#azul {
+    color: var(--nbg, #1C304A);
 }
