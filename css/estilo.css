@@ -355,3 +355,29 @@ html, body {
     bottom: 10px;
 }
 
+/* Estilos para pantallas de 600px o más */
+@media screen and (min-width: 600px) {
+    #contenido, #info, #caracteristicas, #post {
+      width: 90%; /* Ajusta el ancho según tus necesidades */
+      max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+      /* Agrega otros estilos para pantallas más grandes */
+    }
+  }
+  
+  /* Estilos para pantallas de 400px o más */
+  @media screen and (min-width: 400px) {
+    #contenido, #info, #caracteristicas, #post {
+      width: 90%; /* Ajusta el ancho según tus necesidades */
+      max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+      /* Agrega otros estilos para pantallas medianas */
+    }
+  }
+  
+  /* Estilos para pantallas de 0 a 399px */
+  @media screen and (max-width: 399px) {
+    #contenido, #info, #caracteristicas, #post {
+      width: 90%; /* Ajusta el ancho según tus necesidades */
+      max-width: 600px; /* Ajusta el ancho máximo según tus necesidades */
+      /* Agrega otros estilos para pantallas pequeñas (móviles) */
+    }
+  }
